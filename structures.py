@@ -118,3 +118,19 @@ print(my_dict)  # {'name': 'Neema', 'age': 24, 'location': 'Kitui'}
 # 5. String = immutable, ordered, allows duplicates, slicing, indexing
 my_str = "Hello"
 print(my_str[0])  # H
+
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A | B)            # {1, 2, 3, 4, 5}
+print(A.union(B))       # {1, 2, 3, 4, 5}
+
+print(A & B)            # {3}
+print(A.intersection(B))  # {3}
+
+print(A - B)            # {1, 2}
+print(B - A)            # {4, 5}
+print(A.difference(B))  # {1, 2}
+
+print(A ^ B)                    # {1, 2, 4, 5}
+print(A.symmetric_difference(B))  # {1, 2, 4, 5}
